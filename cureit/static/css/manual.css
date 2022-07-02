@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 276px) and (max-width:576px) {
+    .nextbtn {
+      display: flex;
+      justify-content: center;
+    }
+
+  }

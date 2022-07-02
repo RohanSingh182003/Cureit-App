@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block nav-name %}General Information{% endblock nav-name %}
+
+{% block body %}
+
+<body>
+  <div class="container">
+  
+    <h1 class="text-center my-4">General Information</h1>
+    <form method="post" action="/info">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="exampleName" class="form-label">Enter your Full Name</label>
+        <input type="text" class="form-control" id="exampleName" name="user-name" required>
+       </div>
+        <div class="mb-3">
+          <label for="exampleEmail" class="form-label">Enter your Email</label>
+          <input type="email" class="form-control" id="exampleEmail" aria-describedby="emailHelp" name="user-email" required>
+        </div>
+        <div class="mb-3">
+          <label for="examplePassword" class="form-label">Enter Password</label>
+          <input type="password" class="form-control" id="examplePassword" aria-describedby="emailHelp" name="user-passsword" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleAge" class="form-label">Enter your Age</label>
+          <input type="number" class="form-control" id="exampleAge" aria-describedby="emailHelp" name="user-age" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleGender" class="form-label">Enter your Gender</label>
+          <input type="text" class="form-control" id="exampleGender" aria-describedby="emailHelp" name="user-gender" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInstituteName" class="form-label">Enter your Institute Name</label>
+          <input type="text" class="form-control" id="exampleInstituteName" aria-describedby="emailHelp" name="user-InstituteName" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleDesignation" class="form-label">Designation Of The Employee</label>
+          <input type="text" class="form-control" id="exampleDesignation" aria-describedby="emailHelp" name="user-Designation" required>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" class="btn btn-outline-primary mt-3 float-end mb-5 me-4">Submit</button>
+        </div>
+    </form>
+  </div>
+  {% endblock body %}

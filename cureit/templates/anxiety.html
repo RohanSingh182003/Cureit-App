@@ -1,0 +1,1077 @@
+{% extends 'base.html' %}
+
+
+{% block nav-name %}Anxiety{% endblock nav-name %}
+
+{% block nav-extra %}<li class="nav-item"><a class="nav-link" href="logoutuser" style="color:white;">LogOut</a></ul>{% endblock nav-extra %}
+
+
+  {% block body %}
+
+  <body>
+    <form action="/anxiety" method="post">
+      {% csrf_token %}
+        <div class="d-flex justify-content-center">
+
+
+
+
+            <div class="container">
+                <center>
+                    
+
+                    <p>
+
+                    <h2 class="my-4">DIRECTIONS For Anxiety</h2><br>
+                    <h4 class="my-4">0=Never to end . 4=Almost Never . 2=Sometimes . 2=Fairly Often . 4=Very Often</h4>
+                    <h2><strong><u>Y-1</u></strong></h2>
+
+
+
+
+
+
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>1. I feel calm. </b></div><br>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans1" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans1" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans1" id="inlineRadio4" value="2" required>
+                                <label class="form-check-label" for="inlineradio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans1" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>2. I feel secure. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans2" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans2" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans2" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans2" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>3. I am tonse. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans3" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans3" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans3" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans3" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>4. I feel strained. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans4" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans4" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans4" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans4" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>5. I feel at ease. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans5" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans5" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans5" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans5" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>6. I feel upset. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans6" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans6" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans6" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans6" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>7. I am presently worrying over possible misfortunes. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans7" id="inlineRadio2" value="1" required required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans7" id="inlineRadio1" value="2" required required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans7" id="inlineRadio2" value="3" required required>
+                                <label class="form-check-label" for="2">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans7" id="inlineRadio4" value="4" required required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>8. I feel satisfied. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans8" id="inlineRadio2" value="4" required required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans8" id="inlineRadio1" value="3" required required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans8" id="inlineRadio2" value="2" required required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans8" id="inlineRadio4" value="1" required required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>9. I feel frightened. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans9" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans9" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans9" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans9" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>10. I feel comfortable. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans10" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans10" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans10" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans10" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>11. I feel self-confident. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans11" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans11" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans11" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans11" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>12. I feel nervous. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans12" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans12" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans12" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans12" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                    <div class="p-2 bd-highlight"><b>13. I am jittery. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans13" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans13" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans13" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans13" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>14. I feel indecesive. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans14" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans14" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans14" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans14" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>15. I am relaxed. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans15" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans15" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans15" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans15" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>16. I feel content. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans16" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans16" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans16" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans16" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>17. I am worrid. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans17" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans17" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans17" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans17" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>18. I feel confused. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans18" id="inlineRadio2" value="1" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans18" id="inlineRadio1" value="2" required>
+                                <label class="form-check-label" for="inlineRadio3">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans18" id="inlineRadio2" value="3" required>
+                                <label class="form-check-label" for="inlineRadio4">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans18" id="inlineRadio4" value="4" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>19. I feel steady. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans19" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans19" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans19" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans19" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex bd-highlight mb-2">
+
+                        <div class="p-2 bd-highlight"><b>20. I feel pleasant. </b></div>
+                        <div class="ms-auto p-2 bd-highlight">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans20" id="inlineRadio2" value="4" required>
+                                <label class="form-check-label" for="inlineRadio2">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans20" id="inlineRadio1" value="3" required>
+                                <label class="form-check-label" for="inlineRadio1">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans20" id="inlineRadio2" value="2" required>
+                                <label class="form-check-label" for="inlineRadio2">3</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="ans20" id="inlineRadio4" value="1" required>
+                                <label class="form-check-label" for="inlineradio5">4</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <h2><strong><u>Y-2</u></strong></h2>
+                    
+
+
+                    <div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>21. I feel pleasant. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans21" id="inlineRadio2" value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans21" id="inlineRadio1" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio1">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans21" id="inlineRadio2" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio2">3</label>
+    
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans21" id="inlineRadio4" value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>22. I feel nervous and restless.</b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans22" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans22" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans22" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans22" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>23. I feel satisfied with myself. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans23" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans23" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans23" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans23" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>24. I wish could be as happy as others seem to be. </b></div><br>
+                                    <div class="ms-auto p-2 bd-highlight"></div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ans24" id="inlineRadio2" value="1" required>
+                                        <label class="form-check-label" for="inlineRadio2">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ans24" id="inlineRadio1" value="2" required>
+                                        <label class="form-check-label" for="inlineRadio3">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ans24" id="inlineRadio2" value="3" required>
+                                        <label class="form-check-label" for="inlineRadio4">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ans24" id="inlineRadio4" value="4" required>
+                                        <label class="form-check-label" for="inlineradio5">4</label>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>25. I feel like a failure. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans25" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans25" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans25" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans25" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>26. I feel rested. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans26" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans26" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans26" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans26" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>27. I am "calm, cool, and collected". </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans27" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans27" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans27" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans27" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>28. I feel that difficulties are pilling up so that cannot overcome them. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans28" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans28" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans28" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans28" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>29. I worry too much over something that really doesn't matter. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans29" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans29" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans29" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans29" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>30. I am happy. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans30" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans30" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans30" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans30" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>31. I. have disturbing thoughts. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans31" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans31" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans31" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans31" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>32. I lack self-confidence. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans32" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans32" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans32" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans32" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>33. I feel secure. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans33" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans33" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans33" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans33" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>34. I make decisions easily. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans34" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans34" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans34" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans34" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>35. I feel inadequate. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans35" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans35" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans35" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans35" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>36. I am content. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans36" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans36" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans36" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans36" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>37. Some unimportant thought runs through my mind and bothers me. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans37" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans37" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans37" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans37" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>38. I take disappointments so keenly that I can't put them out of my mind. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans38" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans38" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans38" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans38" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>39. I am a steady person. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans39" id="inlineRadio2"
+                                        value="4" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans39" id="inlineRadio1"
+                                        value="3" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans39" id="inlineRadio4"
+                                        value="2" required>
+                                    <label class="form-check-label" for="inlineradio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans39" id="inlineRadio4"
+                                        value="1" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-flex bd-highlight mb-2">
+
+                            <div class="p-2 bd-highlight"><b>40. I get in a state of tension or turmoil as think over my recent concerns and interests. </b></div><br>
+                            <div class="ms-auto p-2 bd-highlight">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans40" id="inlineRadio2" value="1" required>
+                                    <label class="form-check-label" for="inlineRadio2">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans40" id="inlineRadio1" value="2" required>
+                                    <label class="form-check-label" for="inlineRadio3">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans40" id="inlineRadio2" value="3" required>
+                                    <label class="form-check-label" for="inlineRadio4">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ans40" id="inlineRadio4" value="4" required>
+                                    <label class="form-check-label" for="inlineradio5">4</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-end my-4 me-2">
+                            <button type="submit" class="btn btn-outline-info">Submit</button>
+                          </div>
+                       
+                    </div>
+                </div>
+
+                
+            </p>
+        </center>
+        
+            </div>
+            </p>
+        </div>
+
+    </form>
+
+    {% endblock body %}
